@@ -2,7 +2,7 @@ import io
 import numpy as np
 
 # Read an SRRS file into memory
-srrs_in = io.open('2018073004_SRRS0257.ANX', 'rb')
+srrs_in = io.open('2018090100_SRRS0248.PCX', 'rb')
 srrs = np.fromfile(srrs_in, dtype=np.dtype('|S1'))
 
 # Locate all '*'s in the file (1's indicate a '*'; 0's indicate anything else. Then element-wise subtract the 1's and
